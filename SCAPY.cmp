@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+from scapy.all import *
+
+ping = IP(dst="192.168.0.1")/ICMP()
+print(ping)
+
+
+# send(fragment(IP(dst="127.0.0.1")/ICMP()/("x"*60000)))
+
+
+#syn_flood = IP(dst="192.168.0.1", id=1111, ttl=99)/
+##		TCP(sport=RandShort(), dport=[80], seq=12345, ack=1000, window=1000, \
+##		   flags="S")
+#answered, unanswered = srloop(syn_flood, inter=0.3, retry=2, timeout=4)

